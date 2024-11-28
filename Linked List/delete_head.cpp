@@ -73,3 +73,6 @@ int main() {
 
     return 0;
 }
+
+// Original list: 12 5 6 8 
+// List after removing head: 5 6 8 
