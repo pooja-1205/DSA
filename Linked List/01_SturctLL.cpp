@@ -1,11 +1,13 @@
+// This code demonstrates the creation of a basic singly linked list node in C++ and the use of dynamic memory allocation.
+
 #include <iostream>
 #include <vector>
 using namespace std;
 
 class Node {
 public: // Access modifier (corrected from `Public`)
-    int data;   // The data value
-    Node* next; // Pointer to the next node
+    int data;   // Stores the data in the node
+    Node* next; // Pointer to the next node in the linked list
 
     // Constructor with two arguments
     Node(int data1, Node* next1) {
@@ -24,7 +26,7 @@ int main() {
     vector<int> arr = {2, 5, 8, 7}; // Example array of integers
 
     // Create a Node using the first element of the array
-    Node* y = new Node(arr[0]);
+    Node* y = new Node(arr[2]);
 
     
 
@@ -39,3 +41,8 @@ int main() {
 
     return 0;
 }
+
+
+/*Output 
+Node memory address: 0x27a697d1450
+Node data: 8*/
